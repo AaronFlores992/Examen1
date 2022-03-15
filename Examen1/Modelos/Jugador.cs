@@ -40,13 +40,13 @@ namespace Examen1.Modelos
 
         public int dineroPerdido
         {
-            get { return _dineroActual; }
+            get { return _dineroPerdido; }
             set { _dineroPerdido = value; }
         }
 
         public override string ToString()
         {
-            return $"Jugador: {_nombre}";
+            return $"Jugador: {_nombre}, Dinero Actual: {dineroActual}, Dinero perdido: {dineroPerdido}";
         }
     }
 }
