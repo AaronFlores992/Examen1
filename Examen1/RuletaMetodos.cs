@@ -270,6 +270,7 @@ namespace Examen1
                             dineroPerdido = dineroPerdido + apuesta;
                             _jugador.dineroPerdido = dineroPerdido;
                             Console.WriteLine($"Apuesta perdida! era negro\n ");
+                            resultadosNegros++;
                             break;
                         }
                     }
@@ -299,6 +300,7 @@ namespace Examen1
                                 dineroPerdido = dineroPerdido + apuesta;
                                 _jugador.dineroPerdido = dineroPerdido;
                                 Console.WriteLine($"Apuesta perdida! era rojo\n ");
+                                resultadosRojos++;
                                 break;
                             }
                         }
@@ -346,6 +348,7 @@ namespace Examen1
                         dineroPerdido = dineroPerdido + apuesta;
                         _jugador.dineroPerdido = dineroPerdido;
                         Console.WriteLine($"Apuesta perdida! era impar, Número: {numeroRandom}\n ");
+                        resultadosImpares++;
 
                     }
                 }
@@ -371,7 +374,7 @@ namespace Examen1
                             dineroPerdido = dineroPerdido + apuesta;
                             _jugador.dineroPerdido = dineroPerdido;
                             Console.WriteLine($"Apuesta perdida! era par, Número: {numeroRandom}\n ");
-
+                            resultadosPares++;
                         }
                     }
                 }
